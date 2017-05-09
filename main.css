@@ -107,7 +107,7 @@ h1, h2 {
   margin: 0;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1270px) {
   video {
     height: auto;
     width: 100vw;
