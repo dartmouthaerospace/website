@@ -66,20 +66,22 @@ body {
 }
 
 .video-wrapper {
+  background-color: black;
   position: absolute;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  z-index: -101;
 }
 
 video {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
+  height: 100vh;
   z-index: -100;
+  object-fit: cover;
 }
 
 .hero-container {
@@ -105,7 +107,12 @@ h1, h2 {
   margin: 0;
 }
 
-
+@media (min-width: 1025px) {
+  video {
+    height: auto;
+    width: 100vw;
+  }
+}
 
 
 
